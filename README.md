@@ -12,6 +12,25 @@ Versions
 	- Fixed a couple of bugs which stopped overriding some default parameters
 	- Lowered default delayLimit setting (delay feedback)
 
+Installation and requirements
+-----------------------------
+
+Update: I've updated the repo which now contains a script to install 'pip' (Python tools). I think the steps to get it working should be something like this:
+
+1) Install Python, version 3.x at least.
+https://realpython.com/installing-python/
+
+2) Download and unzip rndsynth.zip
+
+3) Open a commmand prompt or terminal window and navigate to where you unzipped rndsynth.
+
+4) Enter 'python get-pip.py' to install pip tools
+
+5) To install the library dependencies use pip:
+
+pip install lxml
+pip install typing
+
 Running
 -------
 You can run rndsynth.py without any parameters for the correct options syntax.
