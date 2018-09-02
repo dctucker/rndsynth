@@ -28,58 +28,60 @@ https://realpython.com/installing-python/
 
 5) To install the library dependencies use pip:
 
+```
 pip install lxml
 pip install typing
+```
 
 Running
 -------
 You can run rndsynth.py without any parameters for the correct options syntax.
 Below is a brief explanation of what each option does.
 
-octaveRange
+`octaveRange`
 Number of octaves over which the oscillator pitches are generated. Positive and negative values are generated so a value of 2 will generate pitches from -24 to +24
 
-semitones
+`semitones`
 True/False, if True the pitches will be generated in semitones. If False only octave intervals will be used, the range determined by octaveRange
 
-patchAll
+`patchAll`
 True/False. If True, one random modulation connection will be made per modulation source. If False, a random number of modulation sources and destinations will be generated.
 
-patchLimit
+`patchLimit`
 1 to 32. Number of modulation connections to randomly create.
 
-unisonLimit
+`unisonLimit`
 1 to 8. Limit to the number of random unison voice number setting.
 
-delayLimit
+`delayLimit`
 0 to 50. Limit the amount of delay feedback. This is 20 by default to avoid overloading the feedback.
 
-reverbLimit
+`reverbLimit`
 0 to 50. Reverb amount limit.
 
-lpfMinimum
+`lpfMinimum`
 0 to 50. Sets the minimum LPF frequency.
 
-hpfMaximum
+`hpfMaximum`
 0 to 50. Sets the maximum HPF frequency.
 
-resLimit
+`resLimit`
 0 to 50. Sets the resonance limit for both LPF and HPF
 
-srrLimit
+`srrLimit`
 0 to 50. Sets the limit for sample rate reduction effect
 
-brrLimit
+`brrLimit`
 0 to 50. Sets the limit for bit rate reduction effect
 
-saturationLimit
+`saturationLimit`
 0 to 15. Sets the limit for saturation effect
 
-noiseLimit
+`noiseLimit`
 0 to 50. Sets the noise level limit
 
-rndArpeggiator
+`rndArpeggiator`
 True/False. If True, random arpeggiator settings will be generated. If False, they won't.
 
-rndModFX
+`rndModFX`
 True/False. If True, random modulation FX will be generated.
